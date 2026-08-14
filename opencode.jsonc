@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest", "--proxy-server", "127.0.0.1:8080", "--acceptInsecureCerts"],
+      "enabled": true
+    },
+    "burp-mcp": {
+      "type": "local",
+      "command": ["java", "-jar", "/home/bugbounty/Desktop/mcp-proxy.jar", "--sse-url", "http://localhost:9876"],
+      "enabled": true
+    }
+  }
+}

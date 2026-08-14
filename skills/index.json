@@ -1,0 +1,6616 @@
+{
+  "meta": {
+    "name": "Bug Bounty Skills Index",
+    "version": "1.0",
+    "description": "Auto-generated index of bug bounty hunting skills",
+    "source_count": 68,
+    "skill_count": 68,
+    "categories": {
+      "api": 14,
+      "auth": 7,
+      "injection": 18,
+      "logic": 6,
+      "privesc": 3,
+      "pwn": 5,
+      "recon": 13,
+      "report": 1,
+      "tools": 1
+    }
+  },
+  "skills": [
+    {
+      "id": "skill-403-bypass",
+      "name": "403-bypass",
+      "file": "403-bypass/SKILL.md",
+      "category": "auth",
+      "subcategory": "bypass",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "403",
+        "access-control",
+        "auth",
+        "authentication",
+        "bug-bounty",
+        "bypass",
+        "injection",
+        "path-manipulation",
+        "account-takeover",
+        "api",
+        "authorization",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "ffuf",
+        "burp-suite",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "admin-panel-bypass",
+        "waf-bypass-headers",
+        "sqli",
+        "xss",
+        "api-fuzzing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-admin-panel-bypass",
+      "name": "admin-panel-bypass",
+      "file": "admin-panel-bypass/SKILL.md",
+      "category": "auth",
+      "subcategory": "bypass",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "access-control",
+        "admin-panel",
+        "auth",
+        "authentication",
+        "bug-bounty",
+        "bypass",
+        "discovery",
+        "injection",
+        "default-credentials",
+        "misconfiguration",
+        "easy-wins",
+        "account-takeover",
+        "api",
+        "authorization",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "ffuf",
+        "gobuster",
+        "dirsearch",
+        "burp-suite",
+        "katana",
+        "httpx",
+        "waybackurls",
+        "hydra",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "403-bypass",
+        "host-header-injection",
+        "waf-bypass-headers",
+        "sqli",
+        "xss",
+        "idor"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-api-authorization-bypass",
+      "name": "api-authorization-bypass",
+      "file": "api-authorization-bypass/SKILL.md",
+      "category": "api",
+      "subcategory": "authorization",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "api",
+        "authorization",
+        "bola",
+        "mflac",
+        "access-control",
+        "forced-browsing",
+        "verb-tampering",
+        "broken-access-control",
+        "privilege-escalation",
+        "account-takeover",
+        "auth",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "mitmproxy",
+        "postman",
+        "ffuf",
+        "dirsearch",
+        "jwt_tool",
+        "kiterunner",
+        "arjun",
+        "authz",
+        "autorize",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "zap",
+        "curl"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "idor-detection-exploitation",
+        "authorization-session-testing",
+        "mass-assignment",
+        "jwt-attacks",
+        "http-parameter-pollution",
+        "open-redirect",
+        "403-bypass",
+        "api-fuzzing",
+        "admin-panel-bypass"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-api-fuzzing",
+      "name": "api-fuzzing",
+      "file": "api-fuzzing/SKILL.md",
+      "category": "api",
+      "subcategory": "api-fuzzing",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "api",
+        "fuzzing",
+        "rest",
+        "soap",
+        "swagger",
+        "endpoint-discovery",
+        "access-control",
+        "account-takeover",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "kiterunner",
+        "burp-suite",
+        "swagger-ez",
+        "json2paths",
+        "apicheck",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "graphql-vulnerabilities",
+        "json-auth-fuzzing",
+        "jwt-attacks",
+        "sqli",
+        "xss",
+        "ssti",
+        "ssrf",
+        "xxe",
+        "lfi",
+        "idor-detection-exploitation",
+        "mass-assignment"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-api-keys-dump",
+      "name": "api-keys-dump",
+      "file": "api-keys-dump/SKILL.md",
+      "category": "recon",
+      "subcategory": "js-recon",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "javascript",
+        "js-recon",
+        "secrets",
+        "api-keys",
+        "credentials",
+        "tokens",
+        "hashes",
+        "passwords",
+        "database-connections",
+        "devtools",
+        "console",
+        "trufflehog",
+        "reghex"
+      ],
+      "tools": [
+        "browser",
+        "devtools",
+        "console",
+        "fetch",
+        "curl",
+        "burp",
+        "trufflehog",
+        "gitleaks"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "js-secret-hunting",
+        "js-recon-tricks",
+        "information-disclosure-harvesting",
+        "exploitation-chaining"
+      ],
+      "prerequisite_skills": [
+        "recon-attack-surface-mapping"
+      ]
+    },
+    {
+      "id": "skill-authorization-session-testing",
+      "name": "authorization-session-testing",
+      "file": "authorization-session-testing/SKILL.md",
+      "category": "privesc",
+      "subcategory": "authorization",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "privesc",
+        "authorization",
+        "authentication",
+        "session",
+        "jwt",
+        "otp",
+        "brute-force",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "sqlmap",
+        "ffuf",
+        "curl",
+        "jwt_tool",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "idor-detection-exploitation",
+        "information-disclosure-harvesting",
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-bug-bounty-reporting",
+      "name": "bug-bounty-reporting",
+      "file": "bug-bounty-reporting/SKILL.md",
+      "category": "report",
+      "subcategory": "reporting",
+      "phase": "reporting",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "report",
+        "reporting",
+        "writeup",
+        "impact",
+        "severity",
+        "chain",
+        "escalation",
+        "business-impact",
+        "reproducibility"
+      ],
+      "tools": [],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "exploitation-chaining"
+      ],
+      "prerequisite_skills": [
+        "wordpress-assessment",
+        "iis-hacking",
+        "laravel-vulnerability-assessment",
+        "denial-of-service-testing",
+        "exploitation-chaining"
+      ]
+    },
+    {
+      "id": "skill-cache-poisoning-deception",
+      "name": "cache-poisoning-deception",
+      "file": "cache-poisoning-deception/SKILL.md",
+      "category": "logic",
+      "subcategory": "cache-poisoning",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "logic",
+        "cache-poisoning",
+        "cache-deception",
+        "web-cache"
+      ],
+      "tools": [
+        "burp-suite",
+        "curl",
+        "param-miner"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xss-exploitation",
+        "information-disclosure-harvesting",
+        "xss",
+        "exploitation-chaining",
+        "http-request-smuggling"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-captcha-bypass",
+      "name": "captcha-bypass",
+      "file": "captcha-bypass/SKILL.md",
+      "category": "auth",
+      "subcategory": "captcha",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "auth",
+        "captcha",
+        "bypass",
+        "rate-limiting",
+        "automation",
+        "access-control",
+        "account-takeover",
+        "api",
+        "authorization",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "burp-suite",
+        "ffuf",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "waf-bypass-headers",
+        "csrf",
+        "race-condition-testing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-chrome-mcp-pentesting",
+      "name": "chrome-mcp-pentesting",
+      "file": "chrome-mcp-pentesting/SKILL.md",
+      "category": "tools",
+      "subcategory": "browser-automation",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "chrome",
+        "mcp",
+        "browser-automation",
+        "devtools",
+        "pentesting",
+        "timeout",
+        "retry",
+        "session-management"
+      ],
+      "tools": [
+        "chrome-devtools-mcp",
+        "burp-suite",
+        "opencode"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "idor-detection-exploitation",
+        "api-fuzzing",
+        "information-disclosure-harvesting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-clickjacking-testing",
+      "name": "clickjacking-testing",
+      "file": "clickjacking-testing/SKILL.md",
+      "category": "logic",
+      "subcategory": "clickjacking",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "logic",
+        "clickjacking",
+        "ui-redress",
+        "csp",
+        "x-frame-options"
+      ],
+      "tools": [
+        "burp-suite",
+        "browser"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xss-exploitation",
+        "csrf-testing",
+        "xss",
+        "csrf",
+        "phishing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-command-injection",
+      "name": "command-injection",
+      "file": "command-injection/SKILL.md",
+      "category": "injection",
+      "subcategory": "command-injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "command-injection",
+        "injection",
+        "os-command"
+      ],
+      "tools": [
+        "commix",
+        "burp-intruder",
+        "interactsh"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "rce",
+        "ssrf",
+        "lfi",
+        "remote-code-execution",
+        "exploitation-chaining"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-cors-misconfiguration",
+      "name": "cors-misconfiguration",
+      "file": "cors-misconfiguration/SKILL.md",
+      "category": "api",
+      "subcategory": "cors",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "cors",
+        "cross-origin",
+        "origin-reflection",
+        "data-exfiltration",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "corsy",
+        "corscanner",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "csrf",
+        "html-injection",
+        "xss",
+        "information-disclosure-harvesting",
+        "api-fuzzing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-crlf-injection",
+      "name": "crlf-injection",
+      "file": "crlf-injection/SKILL.md",
+      "category": "api",
+      "subcategory": "injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "api",
+        "bug-bounty",
+        "crlf",
+        "header-injection",
+        "injection",
+        "log-forging",
+        "response-splitting",
+        "access-control",
+        "account-takeover",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "crlfuzz",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "http-header-injection",
+        "http-request-smuggling",
+        "cors-misconfiguration",
+        "xss",
+        "cache-poisoning-deception"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-cross-site-scripting",
+      "name": "cross-site-scripting",
+      "file": "cross-site-scripting/SKILL.md",
+      "category": "injection",
+      "subcategory": "xss",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "xss",
+        "reflected-xss",
+        "stored-xss",
+        "blind-xss"
+      ],
+      "tools": [
+        "dalfox",
+        "xsstrike",
+        "burp-suite",
+        "gau",
+        "gf",
+        "xsshunter"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "dom-xss",
+        "xss-polyglot",
+        "xss-waf-bypass",
+        "csrf",
+        "prototype-pollution-exploitation",
+        "information-disclosure-harvesting",
+        "dom-cross-site-scripting"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint",
+        "recon-subdomain"
+      ]
+    },
+    {
+      "id": "skill-csp-bypass",
+      "name": "csp-bypass",
+      "file": "csp-bypass/SKILL.md",
+      "category": "auth",
+      "subcategory": "bypass",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "auth",
+        "authentication",
+        "bug-bounty",
+        "bypass",
+        "content-security-policy",
+        "csp",
+        "injection",
+        "xss",
+        "access-control",
+        "account-takeover",
+        "api",
+        "authorization",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "csp-evaluator",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "waf-bypass",
+        "xss",
+        "xss-polyglot",
+        "css-injection"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-csrf",
+      "name": "csrf",
+      "file": "csrf/SKILL.md",
+      "category": "api",
+      "subcategory": "csrf",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "csrf",
+        "cross-site-request-forgery",
+        "same-site",
+        "token-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "csrf-generator"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "cors-misconfiguration",
+        "html-injection",
+        "http-parameter-pollution",
+        "xss",
+        "clickjacking-testing",
+        "csrf"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-css-injection",
+      "name": "css-injection",
+      "file": "css-injection/SKILL.md",
+      "category": "api",
+      "subcategory": "injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "api",
+        "blind-css",
+        "bug-bounty",
+        "csp-bypass",
+        "css-injection",
+        "exfiltration",
+        "injection",
+        "access-control",
+        "account-takeover",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "html-injection",
+        "csrf",
+        "xss",
+        "csp-bypass",
+        "information-disclosure-harvesting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-csv-injection",
+      "name": "csv-injection",
+      "file": "csv-injection/SKILL.md",
+      "category": "injection",
+      "subcategory": "csv-injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "csv-injection",
+        "formula-injection",
+        "dde",
+        "excel",
+        "spreadsheet",
+        "recon",
+        "data-exfiltration",
+        "wordpress",
+        "cve-2018-9035",
+        "injection",
+        "phishing"
+      ],
+      "tools": [
+        "burp-suite",
+        "curl",
+        "excel",
+        "libreoffice",
+        "python3"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "information-disclosure-harvesting",
+        "exploitation-chaining",
+        "bug-bounty-reporting",
+        "phishing"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-denial-of-service-testing",
+      "name": "denial-of-service-testing",
+      "file": "denial-of-service-testing/SKILL.md",
+      "category": "pwn",
+      "subcategory": "dos",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "cache-poisoning",
+        "denial-of-service",
+        "dos",
+        "injection",
+        "pwn",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "burpsuite",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-dom-cross-site-scripting",
+      "name": "dom-cross-site-scripting",
+      "file": "dom-cross-site-scripting/SKILL.md",
+      "category": "injection",
+      "subcategory": "xss",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "xss",
+        "dom-xss",
+        "dom-clobbering"
+      ],
+      "tools": [
+        "dalfox"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xss",
+        "xss-polyglot",
+        "information-disclosure-harvesting"
+      ],
+      "prerequisite_skills": [
+        "xss",
+        "cross-site-scripting"
+      ]
+    },
+    {
+      "id": "skill-exploitation-chaining",
+      "name": "exploitation-chaining",
+      "file": "exploitation-chaining/SKILL.md",
+      "category": "pwn",
+      "subcategory": "exploitation-chain",
+      "phase": "post-exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "pwn",
+        "chain",
+        "exploitation",
+        "account-takeover",
+        "idor",
+        "ssrf",
+        "xss",
+        "csrf",
+        "privesc",
+        "business-impact",
+        "framework",
+        "role-validation",
+        "default-credentials",
+        "pivot-points",
+        "self-xss",
+        "lateral-movement",
+        "log-poisoning",
+        "session-fixation",
+        "chain-lifecycle",
+        "component-interplay",
+        "real-world-case",
+        "multiplicative-risk"
+      ],
+      "tools": [
+        "burpsuite",
+        "ffuf",
+        "httpx",
+        "nuclei",
+        "python3"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": [
+        "wordpress-assessment",
+        "iis-hacking",
+        "laravel-vulnerability-assessment",
+        "denial-of-service-testing",
+        "remote-code-execution",
+        "information-disclosure-harvesting",
+        "authorization-session-testing",
+        "idor-detection-exploitation",
+        "server-side-request-forgery",
+        "cross-site-scripting"
+      ]
+    },
+    {
+      "id": "skill-exposed-source-code-recovery",
+      "name": "exposed-source-code-recovery",
+      "file": "exposed-source-code-recovery/SKILL.md",
+      "category": "privesc",
+      "subcategory": "source-code",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "privesc",
+        "source-code",
+        "git-exposure",
+        "vcs-leak",
+        "recon",
+        "backup-files",
+        "misconfiguration"
+      ],
+      "tools": [
+        "curl",
+        "ffuf",
+        "git-dumper",
+        "svn-extractor"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "information-disclosure-harvesting",
+        "authorization-session-testing",
+        "exploitation-chaining"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-ffuf-web-fuzzing",
+      "name": "ffuf-web-fuzzing",
+      "file": "ffuf-web-fuzzing/SKILL.md",
+      "category": "recon",
+      "subcategory": "fuzzing",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "fuzzing",
+        "content-discovery",
+        "directory-bruteforce",
+        "parameter-fuzzing",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "ffuf",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "api-fuzzing",
+        "admin-panel-bypass",
+        "sqli",
+        "xss",
+        "lfi"
+      ],
+      "prerequisite_skills": [
+        "subdomain-enumeration-checklist"
+      ]
+    },
+    {
+      "id": "skill-file-upload-attacks",
+      "name": "file-upload-attacks",
+      "file": "file-upload-attacks/SKILL.md",
+      "category": "injection",
+      "subcategory": "file-upload",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "file-upload",
+        "webshell",
+        "upload",
+        "injection",
+        "bypass",
+        "polyglot",
+        "mime",
+        "xss",
+        "xxe",
+        "rce",
+        "race-condition",
+        "windows",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "ffuf",
+        "burp-suite",
+        "burp-intruder",
+        "turbo-intruder",
+        "exiftool",
+        "file",
+        "wget",
+        "dirb",
+        "sec-lists",
+        "payloadsallthethings",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "remote-code-execution",
+        "cross-site-scripting",
+        "xml-external-entity",
+        "race-condition-testing",
+        "command-injection",
+        "sql-injection",
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint",
+        "ffuf-web-fuzzing"
+      ]
+    },
+    {
+      "id": "skill-google-dorks",
+      "name": "google-dorks",
+      "file": "google-dorks/SKILL.md",
+      "category": "recon",
+      "subcategory": "attack-surface",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "google-dorks",
+        "passive-recon",
+        "osint"
+      ],
+      "tools": [
+        "google-search"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "subdomain-enumeration-checklist",
+        "ffuf-web-fuzzing",
+        "recon-attack-surface-mapping",
+        "js-recon-tricks"
+      ],
+      "prerequisite_skills": [
+        "google-search"
+      ]
+    },
+    {
+      "id": "skill-graphql-vulnerabilities",
+      "name": "graphql-vulnerabilities",
+      "file": "graphql-vulnerabilities/SKILL.md",
+      "category": "api",
+      "subcategory": "graphql",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "api",
+        "batching",
+        "bug-bounty",
+        "graphql",
+        "idor",
+        "introspection",
+        "access-control",
+        "account-takeover",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "clairvoyance",
+        "inql",
+        "graphqlmap",
+        "graphw00f",
+        "graphql-cop",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "mass-assignment",
+        "api-fuzzing",
+        "jwt-attacks",
+        "sqli",
+        "xss",
+        "idor-detection-exploitation"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-host-header-injection",
+      "name": "host-header-injection",
+      "file": "host-header-injection/SKILL.md",
+      "category": "auth",
+      "subcategory": "header-injection",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "auth",
+        "header-injection",
+        "host-header",
+        "password-reset-poisoning",
+        "cache-poisoning",
+        "ssrf"
+      ],
+      "tools": [
+        "curl",
+        "burp-suite",
+        "ffuf",
+        "python3",
+        "netcat"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "waf-bypass-headers",
+        "admin-panel-bypass",
+        "cache-poisoning-deception",
+        "ssrf"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-html-injection",
+      "name": "html-injection",
+      "file": "html-injection/SKILL.md",
+      "category": "api",
+      "subcategory": "injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "api",
+        "bug-bounty",
+        "credential-theft",
+        "defacement",
+        "html-injection",
+        "injection",
+        "phishing",
+        "access-control",
+        "account-takeover",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "curl",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "css-injection",
+        "csrf",
+        "cors-misconfiguration",
+        "xss",
+        "xss-polyglot",
+        "phishing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-http-header-injection",
+      "name": "http-header-injection",
+      "file": "http-header-injection/SKILL.md",
+      "category": "api",
+      "subcategory": "injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "api",
+        "bug-bounty",
+        "cache-poisoning",
+        "crlf",
+        "header-injection",
+        "host-header",
+        "injection",
+        "response-splitting",
+        "access-control",
+        "account-takeover",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "crlf-injection",
+        "http-request-smuggling",
+        "cors-misconfiguration",
+        "xss",
+        "cache-poisoning-deception"
+      ],
+      "prerequisite_skills": [
+        "crlf-injection"
+      ]
+    },
+    {
+      "id": "skill-http-parameter-pollution",
+      "name": "http-parameter-pollution",
+      "file": "http-parameter-pollution/SKILL.md",
+      "category": "api",
+      "subcategory": "hpp",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "duplicate-parameters",
+        "hpp",
+        "parameter-pollution",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "param-miner",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "mass-assignment",
+        "http-request-smuggling",
+        "csrf",
+        "sqli",
+        "xss",
+        "idor-detection-exploitation"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-http-request-smuggling",
+      "name": "http-request-smuggling",
+      "file": "http-request-smuggling/SKILL.md",
+      "category": "api",
+      "subcategory": "smuggling",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "smuggling",
+        "desync",
+        "cl-te",
+        "te-cl",
+        "te-te",
+        "h2c",
+        "cache-poisoning",
+        "cache-deception",
+        "request-smuggling",
+        "cl0",
+        "h2-smuggling",
+        "request-splitting",
+        "request-tunneling",
+        "response-queue-poisoning",
+        "crlf",
+        "csd",
+        "pause-desync",
+        "mtls-bypass"
+      ],
+      "tools": [
+        "turbo-intruder",
+        "h2csmuggler",
+        "smuggler",
+        "burp-repeater",
+        "burp-intruder",
+        "h2spec"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "http-header-injection",
+        "crlf-injection",
+        "cors-misconfiguration",
+        "xss",
+        "cache-poisoning-deception",
+        "sqli",
+        "api-fuzzing",
+        "open-redirect"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-idor-detection-exploitation",
+      "name": "idor-detection-exploitation",
+      "file": "idor-detection-exploitation/SKILL.md",
+      "category": "logic",
+      "subcategory": "idor",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "logic",
+        "idor",
+        "access-control",
+        "bola",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "autorize",
+        "authz",
+        "paramalyzer",
+        "turbo-intruder",
+        "ffuf",
+        "curl",
+        "kiterunner",
+        "grpcurl",
+        "arjun",
+        "burp",
+        "graphqlmap",
+        "john",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap",
+        "mitmproxy",
+        "postman",
+        "insomnia",
+        "astra",
+        "pynt",
+        "stackhawk",
+        "iis-shortname-scanner",
+        "js-link-finder"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "authorization-session-testing",
+        "information-disclosure-harvesting",
+        "exploitation-chaining",
+        "mass-assignment"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-iis-hacking",
+      "name": "iis-hacking",
+      "file": "iis-hacking/SKILL.md",
+      "category": "pwn",
+      "subcategory": "iis",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "pwn",
+        "iis",
+        "asp.net",
+        "windows",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "ffuf",
+        "httpx-toolkit",
+        "nuclei",
+        "subfinder",
+        "ysoserial.net",
+        "shortscan",
+        "dotPeek",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-information-disclosure-harvesting",
+      "name": "information-disclosure-harvesting",
+      "file": "information-disclosure-harvesting/SKILL.md",
+      "category": "privesc",
+      "subcategory": "info-disclosure",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "privesc",
+        "information-disclosure",
+        "recon",
+        "secrets",
+        "source-maps",
+        "misconfiguration",
+        "easy-wins",
+        "directory-listing",
+        "debug-mode",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "ffuf",
+        "burp-suite",
+        "grpcurl",
+        "nuclei",
+        "git-dumper",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "idor-detection-exploitation",
+        "authorization-session-testing",
+        "cache-poisoning-deception",
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-insecure-deserialization-exploitation",
+      "name": "insecure-deserialization-exploitation",
+      "file": "insecure-deserialization-exploitation/SKILL.md",
+      "category": "logic",
+      "subcategory": "deserialization",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "deserialization",
+        "dotnet",
+        "gadget-chain",
+        "injection",
+        "java",
+        "logic",
+        "php",
+        "python",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "ysoserial",
+        "ysoserial.net",
+        "semgrep",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "rce-exploitation",
+        "information-disclosure-harvesting",
+        "remote-code-execution",
+        "exploitation-chaining"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-js-recon-tricks",
+      "name": "js-recon-tricks",
+      "file": "js-recon-tricks/SKILL.md",
+      "category": "recon",
+      "subcategory": "js-recon",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "javascript",
+        "endpoint-discovery",
+        "source-maps",
+        "spa"
+      ],
+      "tools": [
+        "katana",
+        "gau",
+        "waybackurls",
+        "linkfinder",
+        "secretfinder",
+        "sourcemapper"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "js-secret-hunting",
+        "ffuf-web-fuzzing",
+        "api-fuzzing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-js-secret-hunting",
+      "name": "js-secret-hunting",
+      "file": "js-secret-hunting/SKILL.md",
+      "category": "recon",
+      "subcategory": "js-recon",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "javascript",
+        "secrets",
+        "credentials",
+        "api-keys",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "nuclei",
+        "trufflehog",
+        "grep",
+        "mantra",
+        "js-beautify",
+        "gitleaks",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "api-fuzzing",
+        "json-auth-fuzzing"
+      ],
+      "prerequisite_skills": [
+        "js-recon-tricks"
+      ]
+    },
+    {
+      "id": "skill-json-auth-fuzzing",
+      "name": "json-auth-fuzzing",
+      "file": "json-auth-fuzzing/SKILL.md",
+      "category": "api",
+      "subcategory": "api-fuzzing",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "api",
+        "auth",
+        "authentication",
+        "authentication-bypass",
+        "bug-bounty",
+        "fuzzing",
+        "injection",
+        "json",
+        "type-confusion",
+        "access-control",
+        "account-takeover",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "curl",
+        "burp-suite",
+        "ffuf",
+        "jq",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "jwt-attacks",
+        "mass-assignment",
+        "sqli",
+        "xss"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-jwt-attacks",
+      "name": "jwt-attacks",
+      "file": "jwt-attacks/SKILL.md",
+      "category": "api",
+      "subcategory": "jwt",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "algorithm-confusion",
+        "bug-bounty",
+        "hmac",
+        "jwt",
+        "kid-injection",
+        "token"
+      ],
+      "tools": [
+        "jwt_tool",
+        "hashcat",
+        "c-jwt-cracker",
+        "frida",
+        "objection"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "api-fuzzing",
+        "json-auth-fuzzing",
+        "http-header-injection",
+        "authorization-session-testing"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-laravel-vulnerability-assessment",
+      "name": "laravel-vulnerability-assessment",
+      "file": "laravel-vulnerability-assessment/SKILL.md",
+      "category": "pwn",
+      "subcategory": "laravel",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "pwn",
+        "laravel",
+        "php",
+        "framework"
+      ],
+      "tools": [
+        "curl",
+        "burpsuite",
+        "ffuf"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "exploitation-chaining",
+        "bug-bounty-reporting",
+        "sqli",
+        "xss"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-ldap-injection",
+      "name": "ldap-injection",
+      "file": "ldap-injection/SKILL.md",
+      "category": "injection",
+      "subcategory": "ldap",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "ldap",
+        "authentication-bypass",
+        "directory-services"
+      ],
+      "tools": [
+        "burp-intruder",
+        "jxplorer"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "command-injection",
+        "rce",
+        "remote-code-execution",
+        "information-disclosure-harvesting"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-local-file-inclusion",
+      "name": "local-file-inclusion",
+      "file": "local-file-inclusion/SKILL.md",
+      "category": "injection",
+      "subcategory": "lfi",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "lfi",
+        "path-traversal",
+        "php-wrapper"
+      ],
+      "tools": [
+        "ffuf",
+        "burp-intruder",
+        "seclists",
+        "dotdotpwn",
+        "phpggc"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "rce",
+        "path-traversal",
+        "remote-code-execution",
+        "information-disclosure-harvesting",
+        "exposed-source-code-recovery"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-mass-assignment",
+      "name": "mass-assignment",
+      "file": "mass-assignment/SKILL.md",
+      "category": "api",
+      "subcategory": "mass-assignment",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "mass-assignment",
+        "autobinding",
+        "privilege-escalation",
+        "orm",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "arjun",
+        "paramspider",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "graphql-vulnerabilities",
+        "api-fuzzing",
+        "authorization-session-testing",
+        "idor-detection-exploitation",
+        "prototype-pollution-exploitation"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-nahamsec-recon-workflow",
+      "name": "nahamsec-recon-workflow",
+      "file": "nahamsec-recon-workflow/SKILL.md",
+      "category": "recon",
+      "subcategory": "subdomain-enumeration",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "workflow",
+        "subdomain-enumeration",
+        "pipeline"
+      ],
+      "tools": [
+        "subfinder",
+        "dnsx",
+        "naabu",
+        "httpx",
+        "katana",
+        "chaos",
+        "ffuf",
+        "gau",
+        "waybackurls",
+        "nuclei",
+        "shuffledns"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "js-recon-tricks",
+        "ffuf-web-fuzzing",
+        "recon-attack-surface-mapping",
+        "subdomain-enumeration-checklist"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-open-redirect",
+      "name": "open-redirect",
+      "file": "open-redirect/SKILL.md",
+      "category": "injection",
+      "subcategory": "open-redirect",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "open-redirect",
+        "phishing",
+        "oauth",
+        "chain",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-repeater",
+        "nuclei",
+        "seclists",
+        "oralyzer",
+        "openredirex",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "ssrf",
+        "xss",
+        "sqli",
+        "ssti",
+        "phishing"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-path-traversal",
+      "name": "path-traversal",
+      "file": "path-traversal/SKILL.md",
+      "category": "injection",
+      "subcategory": "path-traversal",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "path-traversal",
+        "lfi",
+        "directory-traversal",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "ffuf",
+        "burp-intruder",
+        "seclists",
+        "dotdotpwn",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "lfi",
+        "rce",
+        "local-file-inclusion",
+        "remote-code-execution"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-paths-dump",
+      "name": "paths-dump",
+      "file": "paths-dump/SKILL.md",
+      "category": "recon",
+      "subcategory": "js-recon",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "javascript",
+        "js-recon",
+        "paths",
+        "endpoints",
+        "content-discovery",
+        "network-tab",
+        "devtools",
+        "linkfinder",
+        "attack-surface",
+        "api",
+        "spa"
+      ],
+      "tools": [
+        "browser",
+        "devtools",
+        "console",
+        "fetch",
+        "ffuf",
+        "httpx",
+        "burp"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "api-fuzzing",
+        "ffuf-web-fuzzing",
+        "js-secret-hunting",
+        "js-recon-tricks",
+        "recon-attack-surface-mapping"
+      ],
+      "prerequisite_skills": [
+        "recon-attack-surface-mapping"
+      ]
+    },
+    {
+      "id": "skill-prototype-pollution-exploitation",
+      "name": "prototype-pollution-exploitation",
+      "file": "prototype-pollution-exploitation/SKILL.md",
+      "category": "logic",
+      "subcategory": "prototype-pollution",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "javascript",
+        "logic",
+        "prototype-pollution",
+        "xss",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-suite",
+        "curl",
+        "silent-spring",
+        "arjun",
+        "authz",
+        "autorize",
+        "burp",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xss-exploitation",
+        "rce-exploitation",
+        "xss",
+        "remote-code-execution",
+        "dom-cross-site-scripting"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-race-condition-testing",
+      "name": "race-condition-testing",
+      "file": "race-condition-testing/SKILL.md",
+      "category": "logic",
+      "subcategory": "race-condition",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "concurrency",
+        "injection",
+        "logic",
+        "race-condition",
+        "toctou",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "turbo-intruder",
+        "burp-repeater",
+        "python",
+        "curl",
+        "go",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "racepht",
+        "aiohttp",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "authorization-session-testing",
+        "exploitation-chaining"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-recon-attack-surface-mapping",
+      "name": "recon-attack-surface-mapping",
+      "file": "recon-attack-surface-mapping/SKILL.md",
+      "category": "recon",
+      "subcategory": "attack-surface",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "attack-surface",
+        "asn",
+        "ct-logs",
+        "cloud",
+        "github-osint"
+      ],
+      "tools": [
+        "subfinder",
+        "assetfinder",
+        "amass",
+        "puredns",
+        "dnsx",
+        "gau",
+        "katana",
+        "naabu",
+        "httpx",
+        "shodan",
+        "censys",
+        "massdns",
+        "dnsgen",
+        "securitytrails"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "js-recon-tricks",
+        "subdomain-takeover",
+        "ffuf-web-fuzzing",
+        "api-fuzzing",
+        "subdomain-enumeration-checklist"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-remote-code-execution",
+      "name": "remote-code-execution",
+      "file": "remote-code-execution/SKILL.md",
+      "category": "injection",
+      "subcategory": "rce",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "command-injection",
+        "deserialization",
+        "file-upload",
+        "injection",
+        "log4shell",
+        "rce",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "ysoserial",
+        "ysoserial.net",
+        "commix",
+        "nuclei",
+        "interactsh",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "metasploit",
+        "msfvenom",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "command-injection",
+        "ssti",
+        "ssrf",
+        "xxe",
+        "exploitation-chaining",
+        "information-disclosure-harvesting",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": [
+        "sqli",
+        "ssti",
+        "lfi",
+        "ssrf"
+      ]
+    },
+    {
+      "id": "skill-security-misconfigurations",
+      "name": "security-misconfigurations",
+      "file": "security-misconfigurations/SKILL.md",
+      "category": "recon",
+      "subcategory": "misconfiguration",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "misconfiguration",
+        "easy-wins",
+        "debug-mode",
+        "default-credentials",
+        "directory-listing",
+        "backup-files",
+        "dev-endpoints",
+        "unprotected-services",
+        "recon",
+        "discovery",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass",
+        "env-files",
+        "docker",
+        "config-exposure"
+      ],
+      "tools": [
+        "curl",
+        "ffuf",
+        "gobuster",
+        "dirsearch",
+        "httpx",
+        "nuclei",
+        "burp-suite",
+        "katana",
+        "waybackurls",
+        "hydra"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "admin-panel-bypass",
+        "information-disclosure-harvesting",
+        "exposed-source-code-recovery",
+        "ffuf-web-fuzzing",
+        "idor-detection-exploitation",
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": [
+        "recon-attack-surface-mapping"
+      ]
+    },
+    {
+      "id": "skill-server-side-request-forgery",
+      "name": "server-side-request-forgery",
+      "file": "server-side-request-forgery/SKILL.md",
+      "category": "injection",
+      "subcategory": "ssrf",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "ssrf",
+        "cloud-metadata",
+        "kubernetes",
+        "internal-pivot"
+      ],
+      "tools": [
+        "interactsh",
+        "gopherus",
+        "ssrfmap",
+        "burp-collaborator"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "rce",
+        "xxe",
+        "lfi",
+        "local-file-inclusion",
+        "remote-code-execution",
+        "information-disclosure-harvesting"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-server-side-template-injection",
+      "name": "server-side-template-injection",
+      "file": "server-side-template-injection/SKILL.md",
+      "category": "injection",
+      "subcategory": "ssti",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "freemarker",
+        "injection",
+        "jinja2",
+        "ssti",
+        "twig"
+      ],
+      "tools": [
+        "nuclei",
+        "sstimap",
+        "tplmap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "rce",
+        "ssrf",
+        "remote-code-execution"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-sql-injection",
+      "name": "sql-injection",
+      "file": "sql-injection/SKILL.md",
+      "category": "injection",
+      "subcategory": "sqli",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "sqli",
+        "database",
+        "sqlmap",
+        "ghauri"
+      ],
+      "tools": [
+        "sqlmap",
+        "ghauri",
+        "gf",
+        "gau",
+        "katana",
+        "waymore",
+        "subfinder",
+        "httpx",
+        "uro"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "rce",
+        "ssrf",
+        "xss",
+        "path-traversal",
+        "remote-code-execution",
+        "information-disclosure-harvesting",
+        "exposed-source-code-recovery"
+      ],
+      "prerequisite_skills": [
+        "recon-subdomain",
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-subdomain-enumeration-checklist",
+      "name": "subdomain-enumeration-checklist",
+      "file": "subdomain-enumeration-checklist/SKILL.md",
+      "category": "recon",
+      "subcategory": "subdomain-enumeration",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "subdomains",
+        "checklist",
+        "dns"
+      ],
+      "tools": [
+        "subfinder",
+        "assetfinder",
+        "findomain",
+        "puredns",
+        "amass",
+        "ffuf",
+        "waybackurls",
+        "dnsx",
+        "crt.sh"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "subdomain-takeover",
+        "recon-attack-surface-mapping",
+        "api-fuzzing",
+        "ffuf-web-fuzzing",
+        "sqli",
+        "xss"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-subdomain-takeover",
+      "name": "subdomain-takeover",
+      "file": "subdomain-takeover/SKILL.md",
+      "category": "recon",
+      "subcategory": "subdomain-enumeration",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "takeover",
+        "dns",
+        "cname",
+        "cloud-misconfiguration"
+      ],
+      "tools": [
+        "subfinder",
+        "dnsx",
+        "httpx",
+        "subzy",
+        "nuclei",
+        "can-i-take-over-xyz"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "exploitation-chaining",
+        "bug-bounty-reporting"
+      ],
+      "prerequisite_skills": [
+        "subdomain-enumeration-checklist"
+      ]
+    },
+    {
+      "id": "skill-subdomains-dump",
+      "name": "subdomains-dump",
+      "file": "subdomains-dump/SKILL.md",
+      "category": "recon",
+      "subcategory": "js-recon",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "recon",
+        "javascript",
+        "js-recon",
+        "subdomains",
+        "domains",
+        "hostnames",
+        "devtools",
+        "console",
+        "attack-surface",
+        "enumeration",
+        "wildcards",
+        "source-maps"
+      ],
+      "tools": [
+        "browser",
+        "devtools",
+        "console",
+        "fetch",
+        "dnsx",
+        "httpx",
+        "subfinder",
+        "burp"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "subdomain-enumeration-checklist",
+        "recon-attack-surface-mapping",
+        "paths-dump",
+        "api-keys-dump",
+        "subdomain-takeover"
+      ],
+      "prerequisite_skills": [
+        "recon-attack-surface-mapping"
+      ]
+    },
+    {
+      "id": "skill-tools-reference",
+      "name": "tools-reference",
+      "file": "tools-reference/SKILL.md",
+      "category": "recon",
+      "subcategory": "tools",
+      "phase": "reconnaissance",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "reference",
+        "tools",
+        "utilities",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "uro",
+        "puredns",
+        "wpscan",
+        "subzy",
+        "smuggler",
+        "xsstrike",
+        "dalfox",
+        "sqlmap",
+        "ghauri",
+        "commix",
+        "trufflehog",
+        "adb",
+        "burp",
+        "gowitness",
+        "corsy",
+        "sstimap",
+        "ssh-audit",
+        "shortscan",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-unicode-normalization-attack",
+      "name": "unicode-normalization-attack",
+      "file": "unicode-normalization-attack/SKILL.md",
+      "category": "injection",
+      "subcategory": "unicode",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "normalization",
+        "unicode"
+      ],
+      "tools": [
+        "burp-repeater",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "sqli",
+        "xss",
+        "xss-waf-bypass",
+        "path-traversal"
+      ],
+      "prerequisite_skills": [
+        "sqli",
+        "xss",
+        "sql-injection",
+        "cross-site-scripting"
+      ]
+    },
+    {
+      "id": "skill-waf-bypass",
+      "name": "waf-bypass",
+      "file": "waf-bypass/SKILL.md",
+      "category": "auth",
+      "subcategory": "bypass",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "auth",
+        "authentication",
+        "bug-bounty",
+        "bypass",
+        "evasion",
+        "injection",
+        "waf",
+        "waf-bypass",
+        "web-application-firewall",
+        "access-control",
+        "account-takeover",
+        "api",
+        "authorization",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token"
+      ],
+      "tools": [
+        "curl",
+        "sqlmap",
+        "ffuf",
+        "burp-suite",
+        "nuclei",
+        "adb",
+        "burp",
+        "ghauri",
+        "wafw00f",
+        "identYwaf",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "waf-bypass-headers",
+        "403-bypass",
+        "sqli",
+        "xss",
+        "xss-waf-bypass"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-waf-bypass-headers",
+      "name": "waf-bypass-headers",
+      "file": "waf-bypass-headers/SKILL.md",
+      "category": "auth",
+      "subcategory": "header-injection",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "auth",
+        "header-injection",
+        "waf-bypass",
+        "ip-spoofing",
+        "host-injection"
+      ],
+      "tools": [
+        "curl",
+        "burp-suite",
+        "ffuf",
+        "python3",
+        "netcat"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "host-header-injection",
+        "403-bypass",
+        "admin-panel-bypass",
+        "xss",
+        "sqli"
+      ],
+      "prerequisite_skills": [
+        "host-header-injection",
+        "waf-bypass"
+      ]
+    },
+    {
+      "id": "skill-wordpress-assessment",
+      "name": "wordpress-assessment",
+      "file": "wordpress-assessment/SKILL.md",
+      "category": "pwn",
+      "subcategory": "wordpress",
+      "phase": "scanning",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "pwn",
+        "wordpress",
+        "cms",
+        "rest-api",
+        "admin-ajax",
+        "xmlrpc",
+        "supply-chain",
+        "ssrf",
+        "lfi",
+        "upload",
+        "graphql",
+        "waf-bypass",
+        "dos",
+        "subdomain-takeover",
+        "misconfiguration"
+      ],
+      "tools": [
+        "wpscan",
+        "nuclei",
+        "ffuf",
+        "curl",
+        "hydra",
+        "phpggc",
+        "jq",
+        "dig",
+        "subzy",
+        "subfinder",
+        "dirsearch"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "exploitation-chaining",
+        "bug-bounty-reporting",
+        "sqli",
+        "xss",
+        "local-file-inclusion",
+        "file-upload-attacks",
+        "server-side-request-forgery",
+        "insecure-deserialization-exploitation",
+        "graphql-vulnerabilities",
+        "denial-of-service-testing",
+        "subdomain-takeover",
+        "waf-bypass"
+      ],
+      "prerequisite_skills": []
+    },
+    {
+      "id": "skill-xml-external-entity",
+      "name": "xml-external-entity",
+      "file": "xml-external-entity/SKILL.md",
+      "category": "injection",
+      "subcategory": "xxe",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "oob",
+        "ssrf",
+        "xml",
+        "xxe",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "interactsh",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "xxeinjector",
+        "burp-collaborator",
+        "oxml_sec",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "ssrf",
+        "rce",
+        "lfi",
+        "local-file-inclusion",
+        "information-disclosure-harvesting",
+        "remote-code-execution"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-xpath-injection",
+      "name": "xpath-injection",
+      "file": "xpath-injection/SKILL.md",
+      "category": "injection",
+      "subcategory": "xpath",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "authentication-bypass",
+        "bug-bounty",
+        "injection",
+        "xml",
+        "xpath",
+        "access-control",
+        "account-takeover",
+        "api",
+        "auth",
+        "authorization",
+        "bypass",
+        "cloud",
+        "cors",
+        "exploitation",
+        "fuzzing",
+        "graphql",
+        "idor",
+        "iis",
+        "information-disclosure",
+        "js-recon",
+        "mass-assignment",
+        "mobile",
+        "oauth",
+        "path-traversal",
+        "privesc",
+        "session",
+        "takeover",
+        "token",
+        "waf-bypass"
+      ],
+      "tools": [
+        "burp-intruder",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap",
+        "xcat",
+        "arjun",
+        "authz",
+        "autorize",
+        "graphqlmap",
+        "grpcurl",
+        "john",
+        "kiterunner",
+        "paramalyzer",
+        "parameth",
+        "repeater",
+        "restler",
+        "zap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xxe",
+        "ssrf",
+        "information-disclosure-harvesting"
+      ],
+      "prerequisite_skills": [
+        "recon-endpoint"
+      ]
+    },
+    {
+      "id": "skill-xss-polyglot",
+      "name": "xss-polyglot",
+      "file": "xss-polyglot/SKILL.md",
+      "category": "injection",
+      "subcategory": "polyglot",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "injection",
+        "polyglot",
+        "xss"
+      ],
+      "tools": [
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xss",
+        "xss-waf-bypass",
+        "dom-xss"
+      ],
+      "prerequisite_skills": [
+        "xss",
+        "cross-site-scripting"
+      ]
+    },
+    {
+      "id": "skill-xss-waf-bypass",
+      "name": "xss-waf-bypass",
+      "file": "xss-waf-bypass/SKILL.md",
+      "category": "injection",
+      "subcategory": "waf-bypass",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "akamai",
+        "bug-bounty",
+        "bypass",
+        "cloudflare",
+        "imperva",
+        "injection",
+        "waf-bypass",
+        "xss"
+      ],
+      "tools": [
+        "burp-intruder",
+        "adb",
+        "burp",
+        "ghauri",
+        "sqlmap"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "xss",
+        "xss-polyglot"
+      ],
+      "prerequisite_skills": [
+        "xss",
+        "cross-site-scripting"
+      ]
+    }
+  ],
+  "category_index": {
+    "api": [
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csrf",
+      "skill-css-injection",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-http-request-smuggling",
+      "skill-json-auth-fuzzing",
+      "skill-jwt-attacks",
+      "skill-mass-assignment"
+    ],
+    "auth": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-captcha-bypass",
+      "skill-csp-bypass",
+      "skill-host-header-injection",
+      "skill-waf-bypass",
+      "skill-waf-bypass-headers"
+    ],
+    "injection": [
+      "skill-command-injection",
+      "skill-cross-site-scripting",
+      "skill-csv-injection",
+      "skill-dom-cross-site-scripting",
+      "skill-file-upload-attacks",
+      "skill-ldap-injection",
+      "skill-local-file-inclusion",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-remote-code-execution",
+      "skill-server-side-request-forgery",
+      "skill-server-side-template-injection",
+      "skill-sql-injection",
+      "skill-unicode-normalization-attack",
+      "skill-xml-external-entity",
+      "skill-xpath-injection",
+      "skill-xss-polyglot",
+      "skill-xss-waf-bypass"
+    ],
+    "logic": [
+      "skill-cache-poisoning-deception",
+      "skill-clickjacking-testing",
+      "skill-idor-detection-exploitation",
+      "skill-insecure-deserialization-exploitation",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing"
+    ],
+    "privesc": [
+      "skill-authorization-session-testing",
+      "skill-exposed-source-code-recovery",
+      "skill-information-disclosure-harvesting"
+    ],
+    "pwn": [
+      "skill-denial-of-service-testing",
+      "skill-exploitation-chaining",
+      "skill-iis-hacking",
+      "skill-laravel-vulnerability-assessment",
+      "skill-wordpress-assessment"
+    ],
+    "recon": [
+      "skill-api-keys-dump",
+      "skill-ffuf-web-fuzzing",
+      "skill-google-dorks",
+      "skill-js-recon-tricks",
+      "skill-js-secret-hunting",
+      "skill-nahamsec-recon-workflow",
+      "skill-paths-dump",
+      "skill-recon-attack-surface-mapping",
+      "skill-security-misconfigurations",
+      "skill-subdomain-enumeration-checklist",
+      "skill-subdomain-takeover",
+      "skill-subdomains-dump",
+      "skill-tools-reference"
+    ],
+    "report": [
+      "skill-bug-bounty-reporting"
+    ],
+    "tools": [
+      "skill-chrome-mcp-pentesting"
+    ]
+  },
+  "phase_index": {
+    "exploitation": [
+      "skill-403-bypass",
+      "skill-api-authorization-bypass",
+      "skill-authorization-session-testing",
+      "skill-cache-poisoning-deception",
+      "skill-captcha-bypass",
+      "skill-chrome-mcp-pentesting",
+      "skill-clickjacking-testing",
+      "skill-command-injection",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-cross-site-scripting",
+      "skill-csp-bypass",
+      "skill-csrf",
+      "skill-css-injection",
+      "skill-csv-injection",
+      "skill-denial-of-service-testing",
+      "skill-dom-cross-site-scripting",
+      "skill-file-upload-attacks",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-http-request-smuggling",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-insecure-deserialization-exploitation",
+      "skill-jwt-attacks",
+      "skill-ldap-injection",
+      "skill-local-file-inclusion",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-server-side-request-forgery",
+      "skill-server-side-template-injection",
+      "skill-sql-injection",
+      "skill-subdomain-takeover",
+      "skill-unicode-normalization-attack",
+      "skill-waf-bypass",
+      "skill-waf-bypass-headers",
+      "skill-xml-external-entity",
+      "skill-xpath-injection",
+      "skill-xss-polyglot",
+      "skill-xss-waf-bypass"
+    ],
+    "post-exploitation": [
+      "skill-exploitation-chaining"
+    ],
+    "reconnaissance": [
+      "skill-api-keys-dump",
+      "skill-exposed-source-code-recovery",
+      "skill-google-dorks",
+      "skill-information-disclosure-harvesting",
+      "skill-js-recon-tricks",
+      "skill-js-secret-hunting",
+      "skill-nahamsec-recon-workflow",
+      "skill-paths-dump",
+      "skill-recon-attack-surface-mapping",
+      "skill-subdomain-enumeration-checklist",
+      "skill-subdomains-dump",
+      "skill-tools-reference"
+    ],
+    "reporting": [
+      "skill-bug-bounty-reporting"
+    ],
+    "scanning": [
+      "skill-admin-panel-bypass",
+      "skill-api-fuzzing",
+      "skill-ffuf-web-fuzzing",
+      "skill-graphql-vulnerabilities",
+      "skill-host-header-injection",
+      "skill-json-auth-fuzzing",
+      "skill-laravel-vulnerability-assessment",
+      "skill-security-misconfigurations",
+      "skill-wordpress-assessment"
+    ]
+  },
+  "tag_index": {
+    "403": [
+      "skill-403-bypass"
+    ],
+    "access-control": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "account-takeover": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-exploitation-chaining",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "admin-ajax": [
+      "skill-wordpress-assessment"
+    ],
+    "admin-panel": [
+      "skill-admin-panel-bypass"
+    ],
+    "akamai": [
+      "skill-xss-waf-bypass"
+    ],
+    "algorithm-confusion": [
+      "skill-jwt-attacks"
+    ],
+    "api": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-paths-dump",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "api-keys": [
+      "skill-api-keys-dump",
+      "skill-js-secret-hunting"
+    ],
+    "asn": [
+      "skill-recon-attack-surface-mapping"
+    ],
+    "asp.net": [
+      "skill-iis-hacking"
+    ],
+    "attack-surface": [
+      "skill-paths-dump",
+      "skill-recon-attack-surface-mapping",
+      "skill-subdomains-dump"
+    ],
+    "auth": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-host-header-injection",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-waf-bypass-headers",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "authentication": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-authorization-session-testing",
+      "skill-csp-bypass",
+      "skill-json-auth-fuzzing",
+      "skill-waf-bypass"
+    ],
+    "authentication-bypass": [
+      "skill-json-auth-fuzzing",
+      "skill-ldap-injection",
+      "skill-xpath-injection"
+    ],
+    "authorization": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "autobinding": [
+      "skill-mass-assignment"
+    ],
+    "automation": [
+      "skill-captcha-bypass"
+    ],
+    "backup-files": [
+      "skill-exposed-source-code-recovery",
+      "skill-security-misconfigurations"
+    ],
+    "batching": [
+      "skill-graphql-vulnerabilities"
+    ],
+    "blind-css": [
+      "skill-css-injection"
+    ],
+    "blind-xss": [
+      "skill-cross-site-scripting"
+    ],
+    "bola": [
+      "skill-api-authorization-bypass",
+      "skill-idor-detection-exploitation"
+    ],
+    "broken-access-control": [
+      "skill-api-authorization-bypass"
+    ],
+    "browser-automation": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "brute-force": [
+      "skill-authorization-session-testing"
+    ],
+    "bug-bounty": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-api-keys-dump",
+      "skill-authorization-session-testing",
+      "skill-bug-bounty-reporting",
+      "skill-cache-poisoning-deception",
+      "skill-captcha-bypass",
+      "skill-chrome-mcp-pentesting",
+      "skill-clickjacking-testing",
+      "skill-command-injection",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-cross-site-scripting",
+      "skill-csp-bypass",
+      "skill-csrf",
+      "skill-css-injection",
+      "skill-csv-injection",
+      "skill-denial-of-service-testing",
+      "skill-dom-cross-site-scripting",
+      "skill-exploitation-chaining",
+      "skill-exposed-source-code-recovery",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-google-dorks",
+      "skill-graphql-vulnerabilities",
+      "skill-host-header-injection",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-http-request-smuggling",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-recon-tricks",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-jwt-attacks",
+      "skill-laravel-vulnerability-assessment",
+      "skill-ldap-injection",
+      "skill-local-file-inclusion",
+      "skill-mass-assignment",
+      "skill-nahamsec-recon-workflow",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-paths-dump",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-recon-attack-surface-mapping",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-server-side-request-forgery",
+      "skill-server-side-template-injection",
+      "skill-sql-injection",
+      "skill-subdomain-enumeration-checklist",
+      "skill-subdomain-takeover",
+      "skill-subdomains-dump",
+      "skill-tools-reference",
+      "skill-unicode-normalization-attack",
+      "skill-waf-bypass",
+      "skill-waf-bypass-headers",
+      "skill-wordpress-assessment",
+      "skill-xml-external-entity",
+      "skill-xpath-injection",
+      "skill-xss-polyglot",
+      "skill-xss-waf-bypass"
+    ],
+    "business-impact": [
+      "skill-bug-bounty-reporting",
+      "skill-exploitation-chaining"
+    ],
+    "bypass": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection",
+      "skill-xss-waf-bypass"
+    ],
+    "cache-deception": [
+      "skill-cache-poisoning-deception",
+      "skill-http-request-smuggling"
+    ],
+    "cache-poisoning": [
+      "skill-cache-poisoning-deception",
+      "skill-denial-of-service-testing",
+      "skill-host-header-injection",
+      "skill-http-header-injection",
+      "skill-http-request-smuggling"
+    ],
+    "captcha": [
+      "skill-captcha-bypass"
+    ],
+    "chain": [
+      "skill-bug-bounty-reporting",
+      "skill-exploitation-chaining",
+      "skill-open-redirect"
+    ],
+    "chain-lifecycle": [
+      "skill-exploitation-chaining"
+    ],
+    "checklist": [
+      "skill-subdomain-enumeration-checklist"
+    ],
+    "chrome": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "cl-te": [
+      "skill-http-request-smuggling"
+    ],
+    "cl0": [
+      "skill-http-request-smuggling"
+    ],
+    "clickjacking": [
+      "skill-clickjacking-testing"
+    ],
+    "cloud": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-recon-attack-surface-mapping",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "cloud-metadata": [
+      "skill-server-side-request-forgery"
+    ],
+    "cloud-misconfiguration": [
+      "skill-subdomain-takeover"
+    ],
+    "cloudflare": [
+      "skill-xss-waf-bypass"
+    ],
+    "cms": [
+      "skill-wordpress-assessment"
+    ],
+    "cname": [
+      "skill-subdomain-takeover"
+    ],
+    "command-injection": [
+      "skill-command-injection",
+      "skill-remote-code-execution"
+    ],
+    "component-interplay": [
+      "skill-exploitation-chaining"
+    ],
+    "concurrency": [
+      "skill-race-condition-testing"
+    ],
+    "config-exposure": [
+      "skill-security-misconfigurations"
+    ],
+    "console": [
+      "skill-api-keys-dump",
+      "skill-subdomains-dump"
+    ],
+    "content-discovery": [
+      "skill-ffuf-web-fuzzing",
+      "skill-paths-dump"
+    ],
+    "content-security-policy": [
+      "skill-csp-bypass"
+    ],
+    "cors": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "credential-theft": [
+      "skill-html-injection"
+    ],
+    "credentials": [
+      "skill-api-keys-dump",
+      "skill-js-secret-hunting"
+    ],
+    "crlf": [
+      "skill-crlf-injection",
+      "skill-http-header-injection",
+      "skill-http-request-smuggling"
+    ],
+    "cross-origin": [
+      "skill-cors-misconfiguration"
+    ],
+    "cross-site-request-forgery": [
+      "skill-csrf"
+    ],
+    "csd": [
+      "skill-http-request-smuggling"
+    ],
+    "csp": [
+      "skill-clickjacking-testing",
+      "skill-csp-bypass"
+    ],
+    "csp-bypass": [
+      "skill-css-injection"
+    ],
+    "csrf": [
+      "skill-csrf",
+      "skill-exploitation-chaining"
+    ],
+    "css-injection": [
+      "skill-css-injection"
+    ],
+    "csv-injection": [
+      "skill-csv-injection"
+    ],
+    "ct-logs": [
+      "skill-recon-attack-surface-mapping"
+    ],
+    "cve-2018-9035": [
+      "skill-csv-injection"
+    ],
+    "data-exfiltration": [
+      "skill-cors-misconfiguration",
+      "skill-csv-injection"
+    ],
+    "database": [
+      "skill-sql-injection"
+    ],
+    "database-connections": [
+      "skill-api-keys-dump"
+    ],
+    "dde": [
+      "skill-csv-injection"
+    ],
+    "debug-mode": [
+      "skill-information-disclosure-harvesting",
+      "skill-security-misconfigurations"
+    ],
+    "defacement": [
+      "skill-html-injection"
+    ],
+    "default-credentials": [
+      "skill-admin-panel-bypass",
+      "skill-exploitation-chaining",
+      "skill-security-misconfigurations"
+    ],
+    "denial-of-service": [
+      "skill-denial-of-service-testing"
+    ],
+    "deserialization": [
+      "skill-insecure-deserialization-exploitation",
+      "skill-remote-code-execution"
+    ],
+    "desync": [
+      "skill-http-request-smuggling"
+    ],
+    "dev-endpoints": [
+      "skill-security-misconfigurations"
+    ],
+    "devtools": [
+      "skill-api-keys-dump",
+      "skill-chrome-mcp-pentesting",
+      "skill-paths-dump",
+      "skill-subdomains-dump"
+    ],
+    "directory-bruteforce": [
+      "skill-ffuf-web-fuzzing"
+    ],
+    "directory-listing": [
+      "skill-information-disclosure-harvesting",
+      "skill-security-misconfigurations"
+    ],
+    "directory-services": [
+      "skill-ldap-injection"
+    ],
+    "directory-traversal": [
+      "skill-path-traversal"
+    ],
+    "discovery": [
+      "skill-admin-panel-bypass",
+      "skill-security-misconfigurations"
+    ],
+    "dns": [
+      "skill-subdomain-enumeration-checklist",
+      "skill-subdomain-takeover"
+    ],
+    "docker": [
+      "skill-security-misconfigurations"
+    ],
+    "dom-clobbering": [
+      "skill-dom-cross-site-scripting"
+    ],
+    "dom-xss": [
+      "skill-dom-cross-site-scripting"
+    ],
+    "domains": [
+      "skill-subdomains-dump"
+    ],
+    "dos": [
+      "skill-denial-of-service-testing",
+      "skill-wordpress-assessment"
+    ],
+    "dotnet": [
+      "skill-insecure-deserialization-exploitation"
+    ],
+    "duplicate-parameters": [
+      "skill-http-parameter-pollution"
+    ],
+    "easy-wins": [
+      "skill-admin-panel-bypass",
+      "skill-information-disclosure-harvesting",
+      "skill-security-misconfigurations"
+    ],
+    "endpoint-discovery": [
+      "skill-api-fuzzing",
+      "skill-js-recon-tricks"
+    ],
+    "endpoints": [
+      "skill-paths-dump"
+    ],
+    "enumeration": [
+      "skill-subdomains-dump"
+    ],
+    "env-files": [
+      "skill-security-misconfigurations"
+    ],
+    "escalation": [
+      "skill-bug-bounty-reporting"
+    ],
+    "evasion": [
+      "skill-waf-bypass"
+    ],
+    "excel": [
+      "skill-csv-injection"
+    ],
+    "exfiltration": [
+      "skill-css-injection"
+    ],
+    "exploitation": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-exploitation-chaining",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "file-upload": [
+      "skill-file-upload-attacks",
+      "skill-remote-code-execution"
+    ],
+    "forced-browsing": [
+      "skill-api-authorization-bypass"
+    ],
+    "formula-injection": [
+      "skill-csv-injection"
+    ],
+    "framework": [
+      "skill-exploitation-chaining",
+      "skill-laravel-vulnerability-assessment"
+    ],
+    "freemarker": [
+      "skill-server-side-template-injection"
+    ],
+    "fuzzing": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "gadget-chain": [
+      "skill-insecure-deserialization-exploitation"
+    ],
+    "ghauri": [
+      "skill-sql-injection"
+    ],
+    "git-exposure": [
+      "skill-exposed-source-code-recovery"
+    ],
+    "github-osint": [
+      "skill-recon-attack-surface-mapping"
+    ],
+    "google-dorks": [
+      "skill-google-dorks"
+    ],
+    "graphql": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-wordpress-assessment",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "h2-smuggling": [
+      "skill-http-request-smuggling"
+    ],
+    "h2c": [
+      "skill-http-request-smuggling"
+    ],
+    "hashes": [
+      "skill-api-keys-dump"
+    ],
+    "header-injection": [
+      "skill-crlf-injection",
+      "skill-host-header-injection",
+      "skill-http-header-injection",
+      "skill-waf-bypass-headers"
+    ],
+    "hmac": [
+      "skill-jwt-attacks"
+    ],
+    "host-header": [
+      "skill-host-header-injection",
+      "skill-http-header-injection"
+    ],
+    "host-injection": [
+      "skill-waf-bypass-headers"
+    ],
+    "hostnames": [
+      "skill-subdomains-dump"
+    ],
+    "hpp": [
+      "skill-http-parameter-pollution"
+    ],
+    "html-injection": [
+      "skill-html-injection"
+    ],
+    "idor": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-exploitation-chaining",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "iis": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "impact": [
+      "skill-bug-bounty-reporting"
+    ],
+    "imperva": [
+      "skill-xss-waf-bypass"
+    ],
+    "information-disclosure": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "injection": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-command-injection",
+      "skill-crlf-injection",
+      "skill-cross-site-scripting",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-csv-injection",
+      "skill-denial-of-service-testing",
+      "skill-dom-cross-site-scripting",
+      "skill-file-upload-attacks",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-insecure-deserialization-exploitation",
+      "skill-json-auth-fuzzing",
+      "skill-ldap-injection",
+      "skill-local-file-inclusion",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-server-side-request-forgery",
+      "skill-server-side-template-injection",
+      "skill-sql-injection",
+      "skill-tools-reference",
+      "skill-unicode-normalization-attack",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection",
+      "skill-xss-polyglot",
+      "skill-xss-waf-bypass"
+    ],
+    "internal-pivot": [
+      "skill-server-side-request-forgery"
+    ],
+    "introspection": [
+      "skill-graphql-vulnerabilities"
+    ],
+    "ip-spoofing": [
+      "skill-waf-bypass-headers"
+    ],
+    "java": [
+      "skill-insecure-deserialization-exploitation"
+    ],
+    "javascript": [
+      "skill-api-keys-dump",
+      "skill-js-recon-tricks",
+      "skill-js-secret-hunting",
+      "skill-paths-dump",
+      "skill-prototype-pollution-exploitation",
+      "skill-subdomains-dump"
+    ],
+    "jinja2": [
+      "skill-server-side-template-injection"
+    ],
+    "js-recon": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-api-keys-dump",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-paths-dump",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-subdomains-dump",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "json": [
+      "skill-json-auth-fuzzing"
+    ],
+    "jwt": [
+      "skill-authorization-session-testing",
+      "skill-jwt-attacks"
+    ],
+    "kid-injection": [
+      "skill-jwt-attacks"
+    ],
+    "kubernetes": [
+      "skill-server-side-request-forgery"
+    ],
+    "laravel": [
+      "skill-laravel-vulnerability-assessment"
+    ],
+    "lateral-movement": [
+      "skill-exploitation-chaining"
+    ],
+    "ldap": [
+      "skill-ldap-injection"
+    ],
+    "lfi": [
+      "skill-local-file-inclusion",
+      "skill-path-traversal",
+      "skill-wordpress-assessment"
+    ],
+    "linkfinder": [
+      "skill-paths-dump"
+    ],
+    "log-forging": [
+      "skill-crlf-injection"
+    ],
+    "log-poisoning": [
+      "skill-exploitation-chaining"
+    ],
+    "log4shell": [
+      "skill-remote-code-execution"
+    ],
+    "logic": [
+      "skill-cache-poisoning-deception",
+      "skill-clickjacking-testing",
+      "skill-idor-detection-exploitation",
+      "skill-insecure-deserialization-exploitation",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing"
+    ],
+    "mass-assignment": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "mcp": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "mflac": [
+      "skill-api-authorization-bypass"
+    ],
+    "mime": [
+      "skill-file-upload-attacks"
+    ],
+    "misconfiguration": [
+      "skill-admin-panel-bypass",
+      "skill-exposed-source-code-recovery",
+      "skill-information-disclosure-harvesting",
+      "skill-security-misconfigurations",
+      "skill-wordpress-assessment"
+    ],
+    "mobile": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "mtls-bypass": [
+      "skill-http-request-smuggling"
+    ],
+    "multiplicative-risk": [
+      "skill-exploitation-chaining"
+    ],
+    "network-tab": [
+      "skill-paths-dump"
+    ],
+    "normalization": [
+      "skill-unicode-normalization-attack"
+    ],
+    "oauth": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "oob": [
+      "skill-xml-external-entity"
+    ],
+    "open-redirect": [
+      "skill-open-redirect"
+    ],
+    "origin-reflection": [
+      "skill-cors-misconfiguration"
+    ],
+    "orm": [
+      "skill-mass-assignment"
+    ],
+    "os-command": [
+      "skill-command-injection"
+    ],
+    "osint": [
+      "skill-google-dorks"
+    ],
+    "otp": [
+      "skill-authorization-session-testing"
+    ],
+    "parameter-fuzzing": [
+      "skill-ffuf-web-fuzzing"
+    ],
+    "parameter-pollution": [
+      "skill-http-parameter-pollution"
+    ],
+    "passive-recon": [
+      "skill-google-dorks"
+    ],
+    "password-reset-poisoning": [
+      "skill-host-header-injection"
+    ],
+    "passwords": [
+      "skill-api-keys-dump"
+    ],
+    "path-manipulation": [
+      "skill-403-bypass"
+    ],
+    "path-traversal": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-local-file-inclusion",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "paths": [
+      "skill-paths-dump"
+    ],
+    "pause-desync": [
+      "skill-http-request-smuggling"
+    ],
+    "pentesting": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "phishing": [
+      "skill-csv-injection",
+      "skill-html-injection",
+      "skill-open-redirect"
+    ],
+    "php": [
+      "skill-insecure-deserialization-exploitation",
+      "skill-laravel-vulnerability-assessment"
+    ],
+    "php-wrapper": [
+      "skill-local-file-inclusion"
+    ],
+    "pipeline": [
+      "skill-nahamsec-recon-workflow"
+    ],
+    "pivot-points": [
+      "skill-exploitation-chaining"
+    ],
+    "polyglot": [
+      "skill-file-upload-attacks",
+      "skill-xss-polyglot"
+    ],
+    "privesc": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-exploitation-chaining",
+      "skill-exposed-source-code-recovery",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "privilege-escalation": [
+      "skill-api-authorization-bypass",
+      "skill-mass-assignment"
+    ],
+    "prototype-pollution": [
+      "skill-prototype-pollution-exploitation"
+    ],
+    "pwn": [
+      "skill-denial-of-service-testing",
+      "skill-exploitation-chaining",
+      "skill-iis-hacking",
+      "skill-laravel-vulnerability-assessment",
+      "skill-wordpress-assessment"
+    ],
+    "python": [
+      "skill-insecure-deserialization-exploitation"
+    ],
+    "race-condition": [
+      "skill-file-upload-attacks",
+      "skill-race-condition-testing"
+    ],
+    "rate-limiting": [
+      "skill-captcha-bypass"
+    ],
+    "rce": [
+      "skill-file-upload-attacks",
+      "skill-remote-code-execution"
+    ],
+    "real-world-case": [
+      "skill-exploitation-chaining"
+    ],
+    "recon": [
+      "skill-api-keys-dump",
+      "skill-csv-injection",
+      "skill-exposed-source-code-recovery",
+      "skill-google-dorks",
+      "skill-information-disclosure-harvesting",
+      "skill-js-recon-tricks",
+      "skill-js-secret-hunting",
+      "skill-nahamsec-recon-workflow",
+      "skill-paths-dump",
+      "skill-recon-attack-surface-mapping",
+      "skill-security-misconfigurations",
+      "skill-subdomain-enumeration-checklist",
+      "skill-subdomains-dump"
+    ],
+    "reference": [
+      "skill-tools-reference"
+    ],
+    "reflected-xss": [
+      "skill-cross-site-scripting"
+    ],
+    "reghex": [
+      "skill-api-keys-dump"
+    ],
+    "report": [
+      "skill-bug-bounty-reporting"
+    ],
+    "reporting": [
+      "skill-bug-bounty-reporting"
+    ],
+    "reproducibility": [
+      "skill-bug-bounty-reporting"
+    ],
+    "request-smuggling": [
+      "skill-http-request-smuggling"
+    ],
+    "request-splitting": [
+      "skill-http-request-smuggling"
+    ],
+    "request-tunneling": [
+      "skill-http-request-smuggling"
+    ],
+    "response-queue-poisoning": [
+      "skill-http-request-smuggling"
+    ],
+    "response-splitting": [
+      "skill-crlf-injection",
+      "skill-http-header-injection"
+    ],
+    "rest": [
+      "skill-api-fuzzing"
+    ],
+    "rest-api": [
+      "skill-wordpress-assessment"
+    ],
+    "retry": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "role-validation": [
+      "skill-exploitation-chaining"
+    ],
+    "same-site": [
+      "skill-csrf"
+    ],
+    "secrets": [
+      "skill-api-keys-dump",
+      "skill-information-disclosure-harvesting",
+      "skill-js-secret-hunting"
+    ],
+    "self-xss": [
+      "skill-exploitation-chaining"
+    ],
+    "session": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "session-fixation": [
+      "skill-exploitation-chaining"
+    ],
+    "session-management": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "severity": [
+      "skill-bug-bounty-reporting"
+    ],
+    "smuggling": [
+      "skill-http-request-smuggling"
+    ],
+    "soap": [
+      "skill-api-fuzzing"
+    ],
+    "source-code": [
+      "skill-exposed-source-code-recovery"
+    ],
+    "source-maps": [
+      "skill-information-disclosure-harvesting",
+      "skill-js-recon-tricks",
+      "skill-subdomains-dump"
+    ],
+    "spa": [
+      "skill-js-recon-tricks",
+      "skill-paths-dump"
+    ],
+    "spreadsheet": [
+      "skill-csv-injection"
+    ],
+    "sqli": [
+      "skill-sql-injection"
+    ],
+    "sqlmap": [
+      "skill-sql-injection"
+    ],
+    "ssrf": [
+      "skill-exploitation-chaining",
+      "skill-host-header-injection",
+      "skill-server-side-request-forgery",
+      "skill-wordpress-assessment",
+      "skill-xml-external-entity"
+    ],
+    "ssti": [
+      "skill-server-side-template-injection"
+    ],
+    "stored-xss": [
+      "skill-cross-site-scripting"
+    ],
+    "subdomain-enumeration": [
+      "skill-nahamsec-recon-workflow"
+    ],
+    "subdomain-takeover": [
+      "skill-wordpress-assessment"
+    ],
+    "subdomains": [
+      "skill-subdomain-enumeration-checklist",
+      "skill-subdomains-dump"
+    ],
+    "supply-chain": [
+      "skill-wordpress-assessment"
+    ],
+    "swagger": [
+      "skill-api-fuzzing"
+    ],
+    "takeover": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-subdomain-takeover",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "te-cl": [
+      "skill-http-request-smuggling"
+    ],
+    "te-te": [
+      "skill-http-request-smuggling"
+    ],
+    "timeout": [
+      "skill-chrome-mcp-pentesting"
+    ],
+    "toctou": [
+      "skill-race-condition-testing"
+    ],
+    "token": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-jwt-attacks",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "token-bypass": [
+      "skill-csrf"
+    ],
+    "tokens": [
+      "skill-api-keys-dump"
+    ],
+    "tools": [
+      "skill-tools-reference"
+    ],
+    "trufflehog": [
+      "skill-api-keys-dump"
+    ],
+    "twig": [
+      "skill-server-side-template-injection"
+    ],
+    "type-confusion": [
+      "skill-json-auth-fuzzing"
+    ],
+    "ui-redress": [
+      "skill-clickjacking-testing"
+    ],
+    "unicode": [
+      "skill-unicode-normalization-attack"
+    ],
+    "unprotected-services": [
+      "skill-security-misconfigurations"
+    ],
+    "upload": [
+      "skill-file-upload-attacks",
+      "skill-wordpress-assessment"
+    ],
+    "utilities": [
+      "skill-tools-reference"
+    ],
+    "vcs-leak": [
+      "skill-exposed-source-code-recovery"
+    ],
+    "verb-tampering": [
+      "skill-api-authorization-bypass"
+    ],
+    "waf": [
+      "skill-waf-bypass"
+    ],
+    "waf-bypass": [
+      "skill-403-bypass",
+      "skill-admin-panel-bypass",
+      "skill-api-authorization-bypass",
+      "skill-api-fuzzing",
+      "skill-authorization-session-testing",
+      "skill-captcha-bypass",
+      "skill-cors-misconfiguration",
+      "skill-crlf-injection",
+      "skill-csp-bypass",
+      "skill-css-injection",
+      "skill-denial-of-service-testing",
+      "skill-ffuf-web-fuzzing",
+      "skill-file-upload-attacks",
+      "skill-graphql-vulnerabilities",
+      "skill-html-injection",
+      "skill-http-header-injection",
+      "skill-http-parameter-pollution",
+      "skill-idor-detection-exploitation",
+      "skill-iis-hacking",
+      "skill-information-disclosure-harvesting",
+      "skill-insecure-deserialization-exploitation",
+      "skill-js-secret-hunting",
+      "skill-json-auth-fuzzing",
+      "skill-mass-assignment",
+      "skill-open-redirect",
+      "skill-path-traversal",
+      "skill-prototype-pollution-exploitation",
+      "skill-race-condition-testing",
+      "skill-remote-code-execution",
+      "skill-security-misconfigurations",
+      "skill-tools-reference",
+      "skill-waf-bypass",
+      "skill-waf-bypass-headers",
+      "skill-wordpress-assessment",
+      "skill-xml-external-entity",
+      "skill-xpath-injection",
+      "skill-xss-waf-bypass"
+    ],
+    "web-application-firewall": [
+      "skill-waf-bypass"
+    ],
+    "web-cache": [
+      "skill-cache-poisoning-deception"
+    ],
+    "webshell": [
+      "skill-file-upload-attacks"
+    ],
+    "wildcards": [
+      "skill-subdomains-dump"
+    ],
+    "windows": [
+      "skill-file-upload-attacks",
+      "skill-iis-hacking"
+    ],
+    "wordpress": [
+      "skill-csv-injection",
+      "skill-wordpress-assessment"
+    ],
+    "workflow": [
+      "skill-nahamsec-recon-workflow"
+    ],
+    "writeup": [
+      "skill-bug-bounty-reporting"
+    ],
+    "x-frame-options": [
+      "skill-clickjacking-testing"
+    ],
+    "xml": [
+      "skill-xml-external-entity",
+      "skill-xpath-injection"
+    ],
+    "xmlrpc": [
+      "skill-wordpress-assessment"
+    ],
+    "xpath": [
+      "skill-xpath-injection"
+    ],
+    "xss": [
+      "skill-cross-site-scripting",
+      "skill-csp-bypass",
+      "skill-dom-cross-site-scripting",
+      "skill-exploitation-chaining",
+      "skill-file-upload-attacks",
+      "skill-prototype-pollution-exploitation",
+      "skill-xss-polyglot",
+      "skill-xss-waf-bypass"
+    ],
+    "xxe": [
+      "skill-file-upload-attacks",
+      "skill-xml-external-entity"
+    ]
+  },
+  "dependency_graph": {
+    "skill-403-bypass": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-admin-panel-bypass",
+        "skill-waf-bypass-headers",
+        "sqli",
+        "xss",
+        "skill-api-fuzzing"
+      ]
+    },
+    "skill-admin-panel-bypass": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-403-bypass",
+        "skill-host-header-injection",
+        "skill-waf-bypass-headers",
+        "sqli",
+        "xss",
+        "idor"
+      ]
+    },
+    "skill-api-authorization-bypass": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-idor-detection-exploitation",
+        "skill-authorization-session-testing",
+        "skill-mass-assignment",
+        "skill-jwt-attacks",
+        "skill-http-parameter-pollution",
+        "skill-open-redirect",
+        "skill-403-bypass",
+        "skill-api-fuzzing",
+        "skill-admin-panel-bypass"
+      ]
+    },
+    "skill-api-fuzzing": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-graphql-vulnerabilities",
+        "skill-json-auth-fuzzing",
+        "skill-jwt-attacks",
+        "sqli",
+        "xss",
+        "ssti",
+        "ssrf",
+        "xxe",
+        "lfi",
+        "skill-idor-detection-exploitation",
+        "skill-mass-assignment"
+      ]
+    },
+    "skill-api-keys-dump": {
+      "prerequisites": [
+        "skill-recon-attack-surface-mapping"
+      ],
+      "follow_ups": [
+        "skill-js-secret-hunting",
+        "skill-js-recon-tricks",
+        "skill-information-disclosure-harvesting",
+        "skill-exploitation-chaining"
+      ]
+    },
+    "skill-authorization-session-testing": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-idor-detection-exploitation",
+        "skill-information-disclosure-harvesting",
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-bug-bounty-reporting": {
+      "prerequisites": [
+        "skill-wordpress-assessment",
+        "skill-iis-hacking",
+        "skill-laravel-vulnerability-assessment",
+        "skill-denial-of-service-testing",
+        "skill-exploitation-chaining"
+      ],
+      "follow_ups": [
+        "skill-exploitation-chaining"
+      ]
+    },
+    "skill-cache-poisoning-deception": {
+      "prerequisites": [],
+      "follow_ups": [
+        "xss-exploitation",
+        "skill-information-disclosure-harvesting",
+        "xss",
+        "skill-exploitation-chaining",
+        "skill-http-request-smuggling"
+      ]
+    },
+    "skill-captcha-bypass": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-waf-bypass-headers",
+        "skill-csrf",
+        "skill-race-condition-testing"
+      ]
+    },
+    "skill-chrome-mcp-pentesting": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-idor-detection-exploitation",
+        "skill-api-fuzzing",
+        "skill-information-disclosure-harvesting"
+      ]
+    },
+    "skill-clickjacking-testing": {
+      "prerequisites": [],
+      "follow_ups": [
+        "xss-exploitation",
+        "csrf-testing",
+        "xss",
+        "skill-csrf",
+        "phishing"
+      ]
+    },
+    "skill-command-injection": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "rce",
+        "ssrf",
+        "lfi",
+        "skill-remote-code-execution",
+        "skill-exploitation-chaining"
+      ]
+    },
+    "skill-cors-misconfiguration": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-csrf",
+        "skill-html-injection",
+        "xss",
+        "skill-information-disclosure-harvesting",
+        "skill-api-fuzzing"
+      ]
+    },
+    "skill-crlf-injection": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-http-header-injection",
+        "skill-http-request-smuggling",
+        "skill-cors-misconfiguration",
+        "xss",
+        "skill-cache-poisoning-deception"
+      ]
+    },
+    "skill-cross-site-scripting": {
+      "prerequisites": [
+        "recon-endpoint",
+        "recon-subdomain"
+      ],
+      "follow_ups": [
+        "dom-xss",
+        "skill-xss-polyglot",
+        "skill-xss-waf-bypass",
+        "skill-csrf",
+        "skill-prototype-pollution-exploitation",
+        "skill-information-disclosure-harvesting",
+        "skill-dom-cross-site-scripting"
+      ]
+    },
+    "skill-csp-bypass": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-waf-bypass",
+        "xss",
+        "skill-xss-polyglot",
+        "skill-css-injection"
+      ]
+    },
+    "skill-csrf": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-cors-misconfiguration",
+        "skill-html-injection",
+        "skill-http-parameter-pollution",
+        "xss",
+        "skill-clickjacking-testing",
+        "skill-csrf"
+      ]
+    },
+    "skill-css-injection": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-html-injection",
+        "skill-csrf",
+        "xss",
+        "skill-csp-bypass",
+        "skill-information-disclosure-harvesting"
+      ]
+    },
+    "skill-csv-injection": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "skill-information-disclosure-harvesting",
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting",
+        "phishing"
+      ]
+    },
+    "skill-denial-of-service-testing": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-dom-cross-site-scripting": {
+      "prerequisites": [
+        "xss",
+        "skill-cross-site-scripting"
+      ],
+      "follow_ups": [
+        "xss",
+        "skill-xss-polyglot",
+        "skill-information-disclosure-harvesting"
+      ]
+    },
+    "skill-exploitation-chaining": {
+      "prerequisites": [
+        "skill-wordpress-assessment",
+        "skill-iis-hacking",
+        "skill-laravel-vulnerability-assessment",
+        "skill-denial-of-service-testing",
+        "skill-remote-code-execution",
+        "skill-information-disclosure-harvesting",
+        "skill-authorization-session-testing",
+        "skill-idor-detection-exploitation",
+        "skill-server-side-request-forgery",
+        "skill-cross-site-scripting"
+      ],
+      "follow_ups": [
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-exposed-source-code-recovery": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-information-disclosure-harvesting",
+        "skill-authorization-session-testing",
+        "skill-exploitation-chaining"
+      ]
+    },
+    "skill-ffuf-web-fuzzing": {
+      "prerequisites": [
+        "skill-subdomain-enumeration-checklist"
+      ],
+      "follow_ups": [
+        "skill-api-fuzzing",
+        "skill-admin-panel-bypass",
+        "sqli",
+        "xss",
+        "lfi"
+      ]
+    },
+    "skill-file-upload-attacks": {
+      "prerequisites": [
+        "recon-endpoint",
+        "skill-ffuf-web-fuzzing"
+      ],
+      "follow_ups": [
+        "skill-remote-code-execution",
+        "skill-cross-site-scripting",
+        "skill-xml-external-entity",
+        "skill-race-condition-testing",
+        "skill-command-injection",
+        "skill-sql-injection",
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-google-dorks": {
+      "prerequisites": [
+        "google-search"
+      ],
+      "follow_ups": [
+        "skill-subdomain-enumeration-checklist",
+        "skill-ffuf-web-fuzzing",
+        "skill-recon-attack-surface-mapping",
+        "skill-js-recon-tricks"
+      ]
+    },
+    "skill-graphql-vulnerabilities": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-mass-assignment",
+        "skill-api-fuzzing",
+        "skill-jwt-attacks",
+        "sqli",
+        "xss",
+        "skill-idor-detection-exploitation"
+      ]
+    },
+    "skill-host-header-injection": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-waf-bypass-headers",
+        "skill-admin-panel-bypass",
+        "skill-cache-poisoning-deception",
+        "ssrf"
+      ]
+    },
+    "skill-html-injection": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-css-injection",
+        "skill-csrf",
+        "skill-cors-misconfiguration",
+        "xss",
+        "skill-xss-polyglot",
+        "phishing"
+      ]
+    },
+    "skill-http-header-injection": {
+      "prerequisites": [
+        "skill-crlf-injection"
+      ],
+      "follow_ups": [
+        "skill-crlf-injection",
+        "skill-http-request-smuggling",
+        "skill-cors-misconfiguration",
+        "xss",
+        "skill-cache-poisoning-deception"
+      ]
+    },
+    "skill-http-parameter-pollution": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-mass-assignment",
+        "skill-http-request-smuggling",
+        "skill-csrf",
+        "sqli",
+        "xss",
+        "skill-idor-detection-exploitation"
+      ]
+    },
+    "skill-http-request-smuggling": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-http-header-injection",
+        "skill-crlf-injection",
+        "skill-cors-misconfiguration",
+        "xss",
+        "skill-cache-poisoning-deception",
+        "sqli",
+        "skill-api-fuzzing",
+        "skill-open-redirect"
+      ]
+    },
+    "skill-idor-detection-exploitation": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-authorization-session-testing",
+        "skill-information-disclosure-harvesting",
+        "skill-exploitation-chaining",
+        "skill-mass-assignment"
+      ]
+    },
+    "skill-iis-hacking": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-information-disclosure-harvesting": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-idor-detection-exploitation",
+        "skill-authorization-session-testing",
+        "skill-cache-poisoning-deception",
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-insecure-deserialization-exploitation": {
+      "prerequisites": [],
+      "follow_ups": [
+        "rce-exploitation",
+        "skill-information-disclosure-harvesting",
+        "skill-remote-code-execution",
+        "skill-exploitation-chaining"
+      ]
+    },
+    "skill-js-recon-tricks": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-js-secret-hunting",
+        "skill-ffuf-web-fuzzing",
+        "skill-api-fuzzing"
+      ]
+    },
+    "skill-js-secret-hunting": {
+      "prerequisites": [
+        "skill-js-recon-tricks"
+      ],
+      "follow_ups": [
+        "skill-api-fuzzing",
+        "skill-json-auth-fuzzing"
+      ]
+    },
+    "skill-json-auth-fuzzing": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-jwt-attacks",
+        "skill-mass-assignment",
+        "sqli",
+        "xss"
+      ]
+    },
+    "skill-jwt-attacks": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-api-fuzzing",
+        "skill-json-auth-fuzzing",
+        "skill-http-header-injection",
+        "skill-authorization-session-testing"
+      ]
+    },
+    "skill-laravel-vulnerability-assessment": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting",
+        "sqli",
+        "xss"
+      ]
+    },
+    "skill-ldap-injection": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "skill-command-injection",
+        "rce",
+        "skill-remote-code-execution",
+        "skill-information-disclosure-harvesting"
+      ]
+    },
+    "skill-local-file-inclusion": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "rce",
+        "skill-path-traversal",
+        "skill-remote-code-execution",
+        "skill-information-disclosure-harvesting",
+        "skill-exposed-source-code-recovery"
+      ]
+    },
+    "skill-mass-assignment": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-graphql-vulnerabilities",
+        "skill-api-fuzzing",
+        "skill-authorization-session-testing",
+        "skill-idor-detection-exploitation",
+        "skill-prototype-pollution-exploitation"
+      ]
+    },
+    "skill-nahamsec-recon-workflow": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-js-recon-tricks",
+        "skill-ffuf-web-fuzzing",
+        "skill-recon-attack-surface-mapping",
+        "skill-subdomain-enumeration-checklist"
+      ]
+    },
+    "skill-open-redirect": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "ssrf",
+        "xss",
+        "sqli",
+        "ssti",
+        "phishing"
+      ]
+    },
+    "skill-path-traversal": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "lfi",
+        "rce",
+        "skill-local-file-inclusion",
+        "skill-remote-code-execution"
+      ]
+    },
+    "skill-paths-dump": {
+      "prerequisites": [
+        "skill-recon-attack-surface-mapping"
+      ],
+      "follow_ups": [
+        "skill-api-fuzzing",
+        "skill-ffuf-web-fuzzing",
+        "skill-js-secret-hunting",
+        "skill-js-recon-tricks",
+        "skill-recon-attack-surface-mapping"
+      ]
+    },
+    "skill-prototype-pollution-exploitation": {
+      "prerequisites": [],
+      "follow_ups": [
+        "xss-exploitation",
+        "rce-exploitation",
+        "xss",
+        "skill-remote-code-execution",
+        "skill-dom-cross-site-scripting"
+      ]
+    },
+    "skill-race-condition-testing": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-authorization-session-testing",
+        "skill-exploitation-chaining"
+      ]
+    },
+    "skill-recon-attack-surface-mapping": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-js-recon-tricks",
+        "skill-subdomain-takeover",
+        "skill-ffuf-web-fuzzing",
+        "skill-api-fuzzing",
+        "skill-subdomain-enumeration-checklist"
+      ]
+    },
+    "skill-remote-code-execution": {
+      "prerequisites": [
+        "sqli",
+        "ssti",
+        "lfi",
+        "ssrf"
+      ],
+      "follow_ups": [
+        "skill-command-injection",
+        "ssti",
+        "ssrf",
+        "xxe",
+        "skill-exploitation-chaining",
+        "skill-information-disclosure-harvesting",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-security-misconfigurations": {
+      "prerequisites": [
+        "skill-recon-attack-surface-mapping"
+      ],
+      "follow_ups": [
+        "skill-admin-panel-bypass",
+        "skill-information-disclosure-harvesting",
+        "skill-exposed-source-code-recovery",
+        "skill-ffuf-web-fuzzing",
+        "skill-idor-detection-exploitation",
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-server-side-request-forgery": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "rce",
+        "xxe",
+        "lfi",
+        "skill-local-file-inclusion",
+        "skill-remote-code-execution",
+        "skill-information-disclosure-harvesting"
+      ]
+    },
+    "skill-server-side-template-injection": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "rce",
+        "ssrf",
+        "skill-remote-code-execution"
+      ]
+    },
+    "skill-sql-injection": {
+      "prerequisites": [
+        "recon-subdomain",
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "rce",
+        "ssrf",
+        "xss",
+        "skill-path-traversal",
+        "skill-remote-code-execution",
+        "skill-information-disclosure-harvesting",
+        "skill-exposed-source-code-recovery"
+      ]
+    },
+    "skill-subdomain-enumeration-checklist": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-subdomain-takeover",
+        "skill-recon-attack-surface-mapping",
+        "skill-api-fuzzing",
+        "skill-ffuf-web-fuzzing",
+        "sqli",
+        "xss"
+      ]
+    },
+    "skill-subdomain-takeover": {
+      "prerequisites": [
+        "skill-subdomain-enumeration-checklist"
+      ],
+      "follow_ups": [
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting"
+      ]
+    },
+    "skill-subdomains-dump": {
+      "prerequisites": [
+        "skill-recon-attack-surface-mapping"
+      ],
+      "follow_ups": [
+        "skill-subdomain-enumeration-checklist",
+        "skill-recon-attack-surface-mapping",
+        "skill-paths-dump",
+        "skill-api-keys-dump",
+        "skill-subdomain-takeover"
+      ]
+    },
+    "skill-tools-reference": {
+      "prerequisites": [],
+      "follow_ups": []
+    },
+    "skill-unicode-normalization-attack": {
+      "prerequisites": [
+        "sqli",
+        "xss",
+        "skill-sql-injection",
+        "skill-cross-site-scripting"
+      ],
+      "follow_ups": [
+        "sqli",
+        "xss",
+        "skill-xss-waf-bypass",
+        "skill-path-traversal"
+      ]
+    },
+    "skill-waf-bypass": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-waf-bypass-headers",
+        "skill-403-bypass",
+        "sqli",
+        "xss",
+        "skill-xss-waf-bypass"
+      ]
+    },
+    "skill-waf-bypass-headers": {
+      "prerequisites": [
+        "skill-host-header-injection",
+        "skill-waf-bypass"
+      ],
+      "follow_ups": [
+        "skill-host-header-injection",
+        "skill-403-bypass",
+        "skill-admin-panel-bypass",
+        "xss",
+        "sqli"
+      ]
+    },
+    "skill-wordpress-assessment": {
+      "prerequisites": [],
+      "follow_ups": [
+        "skill-exploitation-chaining",
+        "skill-bug-bounty-reporting",
+        "sqli",
+        "xss",
+        "skill-local-file-inclusion",
+        "skill-file-upload-attacks",
+        "skill-server-side-request-forgery",
+        "skill-insecure-deserialization-exploitation",
+        "skill-graphql-vulnerabilities",
+        "skill-denial-of-service-testing",
+        "skill-subdomain-takeover",
+        "skill-waf-bypass"
+      ]
+    },
+    "skill-xml-external-entity": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "ssrf",
+        "rce",
+        "lfi",
+        "skill-local-file-inclusion",
+        "skill-information-disclosure-harvesting",
+        "skill-remote-code-execution"
+      ]
+    },
+    "skill-xpath-injection": {
+      "prerequisites": [
+        "recon-endpoint"
+      ],
+      "follow_ups": [
+        "xxe",
+        "ssrf",
+        "skill-information-disclosure-harvesting"
+      ]
+    },
+    "skill-xss-polyglot": {
+      "prerequisites": [
+        "xss",
+        "skill-cross-site-scripting"
+      ],
+      "follow_ups": [
+        "xss",
+        "skill-xss-waf-bypass",
+        "dom-xss"
+      ]
+    },
+    "skill-xss-waf-bypass": {
+      "prerequisites": [
+        "xss",
+        "skill-cross-site-scripting"
+      ],
+      "follow_ups": [
+        "xss",
+        "skill-xss-polyglot"
+      ]
+    }
+  }
+}
