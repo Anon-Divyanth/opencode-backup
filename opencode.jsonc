@@ -3,12 +3,36 @@
   "mcp": {
     "chrome-devtools": {
       "type": "local",
-      "command": ["npx", "-y", "chrome-devtools-mcp@latest", "--proxy-server", "127.0.0.1:8080", "--acceptInsecureCerts"],
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--browserUrl=http://127.0.0.1:34337"
+      ],
       "enabled": true
     },
     "burp-mcp": {
       "type": "local",
-      "command": ["java", "-jar", "/home/bugbounty/Desktop/mcp-proxy.jar", "--sse-url", "http://localhost:9876"],
+      "command": [
+        "java",
+        "-jar",
+        "/home/bugbounty/Desktop/mcp-proxy.jar",
+        "--sse-url",
+        "http://127.0.0.1:9876"
+      ],
+      "enabled": false
+    },
+    "caido": {
+      "type": "local",
+      "command": [
+        "/home/bugbounty/.local/bin/caido-mcp-server",
+        "serve",
+        "--url",
+        "http://127.0.0.1:8082"
+      ],
+      "environment": {
+        "CAIDO_URL": "http://127.0.0.1:8082"
+      },
       "enabled": true
     }
   }

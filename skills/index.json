@@ -3,8 +3,8 @@
     "name": "Bug Bounty Skills Index",
     "version": "1.0",
     "description": "Auto-generated index of bug bounty hunting skills",
-    "source_count": 68,
-    "skill_count": 68,
+    "source_count": 69,
+    "skill_count": 69,
     "categories": {
       "api": 14,
       "auth": 7,
@@ -12,7 +12,7 @@
       "logic": 6,
       "privesc": 3,
       "pwn": 5,
-      "recon": 13,
+      "recon": 14,
       "report": 1,
       "tools": 1
     }
@@ -3367,6 +3367,78 @@
       ]
     },
     {
+      "id": "skill-tool-assisted-exploitation",
+      "name": "tool-assisted-exploitation",
+      "file": "tool-assisted-exploitation/SKILL.md",
+      "category": "recon",
+      "subcategory": "workflow",
+      "phase": "exploitation",
+      "confidence": "",
+      "risk": "",
+      "platforms": [],
+      "tags": [
+        "bug-bounty",
+        "workflow",
+        "automation",
+        "ssti",
+        "graphql",
+        "wordpress",
+        "git-exposure",
+        "request-smuggling",
+        "ssrf",
+        "xss",
+        "403-bypass",
+        "sqli",
+        "command-injection",
+        "iis",
+        "cors",
+        "exploitation",
+        "scanner",
+        "routing"
+      ],
+      "tools": [
+        "sstimap",
+        "graphql-cop",
+        "wpscan",
+        "git-dumper",
+        "trufflehog",
+        "muggler",
+        "smuggler",
+        "ssrfmap",
+        "xsstrike",
+        "dalfox",
+        "byp4xx",
+        "403jump",
+        "sqlmap",
+        "ghauri",
+        "commix",
+        "shortscan",
+        "corsy",
+        "corscan"
+      ],
+      "output_type": "",
+      "output_schema": "",
+      "follow_up_skills": [
+        "server-side-template-injection",
+        "graphql-vulnerabilities",
+        "wordpress-assessment",
+        "exposed-source-code-recovery",
+        "http-request-smuggling",
+        "server-side-request-forgery",
+        "cross-site-scripting",
+        "403-bypass",
+        "sql-injection",
+        "command-injection",
+        "iis-hacking",
+        "cors-misconfiguration"
+      ],
+      "prerequisite_skills": [
+        "recon-attack-surface-mapping",
+        "security-misconfigurations",
+        "ffuf-web-fuzzing"
+      ]
+    },
+    {
       "id": "skill-tools-reference",
       "name": "tools-reference",
       "file": "tools-reference/SKILL.md",
@@ -3959,6 +4031,7 @@
       "skill-subdomain-enumeration-checklist",
       "skill-subdomain-takeover",
       "skill-subdomains-dump",
+      "skill-tool-assisted-exploitation",
       "skill-tools-reference"
     ],
     "report": [
@@ -4008,6 +4081,7 @@
       "skill-server-side-template-injection",
       "skill-sql-injection",
       "skill-subdomain-takeover",
+      "skill-tool-assisted-exploitation",
       "skill-unicode-normalization-attack",
       "skill-waf-bypass",
       "skill-waf-bypass-headers",
@@ -4051,6 +4125,9 @@
   "tag_index": {
     "403": [
       "skill-403-bypass"
+    ],
+    "403-bypass": [
+      "skill-tool-assisted-exploitation"
     ],
     "access-control": [
       "skill-403-bypass",
@@ -4280,7 +4357,8 @@
       "skill-mass-assignment"
     ],
     "automation": [
-      "skill-captcha-bypass"
+      "skill-captcha-bypass",
+      "skill-tool-assisted-exploitation"
     ],
     "backup-files": [
       "skill-exposed-source-code-recovery",
@@ -4368,6 +4446,7 @@
       "skill-subdomain-enumeration-checklist",
       "skill-subdomain-takeover",
       "skill-subdomains-dump",
+      "skill-tool-assisted-exploitation",
       "skill-tools-reference",
       "skill-unicode-normalization-attack",
       "skill-waf-bypass",
@@ -4510,7 +4589,8 @@
     ],
     "command-injection": [
       "skill-command-injection",
-      "skill-remote-code-execution"
+      "skill-remote-code-execution",
+      "skill-tool-assisted-exploitation"
     ],
     "component-interplay": [
       "skill-exploitation-chaining"
@@ -4563,6 +4643,7 @@
       "skill-race-condition-testing",
       "skill-remote-code-execution",
       "skill-security-misconfigurations",
+      "skill-tool-assisted-exploitation",
       "skill-tools-reference",
       "skill-waf-bypass",
       "skill-xml-external-entity",
@@ -4761,6 +4842,7 @@
       "skill-race-condition-testing",
       "skill-remote-code-execution",
       "skill-security-misconfigurations",
+      "skill-tool-assisted-exploitation",
       "skill-tools-reference",
       "skill-waf-bypass",
       "skill-xml-external-entity",
@@ -4826,7 +4908,8 @@
       "skill-sql-injection"
     ],
     "git-exposure": [
-      "skill-exposed-source-code-recovery"
+      "skill-exposed-source-code-recovery",
+      "skill-tool-assisted-exploitation"
     ],
     "github-osint": [
       "skill-recon-attack-surface-mapping"
@@ -4865,6 +4948,7 @@
       "skill-race-condition-testing",
       "skill-remote-code-execution",
       "skill-security-misconfigurations",
+      "skill-tool-assisted-exploitation",
       "skill-tools-reference",
       "skill-waf-bypass",
       "skill-wordpress-assessment",
@@ -4973,6 +5057,7 @@
       "skill-race-condition-testing",
       "skill-remote-code-execution",
       "skill-security-misconfigurations",
+      "skill-tool-assisted-exploitation",
       "skill-tools-reference",
       "skill-waf-bypass",
       "skill-xml-external-entity",
@@ -5508,7 +5593,8 @@
       "skill-bug-bounty-reporting"
     ],
     "request-smuggling": [
-      "skill-http-request-smuggling"
+      "skill-http-request-smuggling",
+      "skill-tool-assisted-exploitation"
     ],
     "request-splitting": [
       "skill-http-request-smuggling"
@@ -5535,8 +5621,14 @@
     "role-validation": [
       "skill-exploitation-chaining"
     ],
+    "routing": [
+      "skill-tool-assisted-exploitation"
+    ],
     "same-site": [
       "skill-csrf"
+    ],
+    "scanner": [
+      "skill-tool-assisted-exploitation"
     ],
     "secrets": [
       "skill-api-keys-dump",
@@ -5613,7 +5705,8 @@
       "skill-csv-injection"
     ],
     "sqli": [
-      "skill-sql-injection"
+      "skill-sql-injection",
+      "skill-tool-assisted-exploitation"
     ],
     "sqlmap": [
       "skill-sql-injection"
@@ -5622,11 +5715,13 @@
       "skill-exploitation-chaining",
       "skill-host-header-injection",
       "skill-server-side-request-forgery",
+      "skill-tool-assisted-exploitation",
       "skill-wordpress-assessment",
       "skill-xml-external-entity"
     ],
     "ssti": [
-      "skill-server-side-template-injection"
+      "skill-server-side-template-injection",
+      "skill-tool-assisted-exploitation"
     ],
     "stored-xss": [
       "skill-cross-site-scripting"
@@ -5833,10 +5928,12 @@
     ],
     "wordpress": [
       "skill-csv-injection",
+      "skill-tool-assisted-exploitation",
       "skill-wordpress-assessment"
     ],
     "workflow": [
-      "skill-nahamsec-recon-workflow"
+      "skill-nahamsec-recon-workflow",
+      "skill-tool-assisted-exploitation"
     ],
     "writeup": [
       "skill-bug-bounty-reporting"
@@ -5861,6 +5958,7 @@
       "skill-exploitation-chaining",
       "skill-file-upload-attacks",
       "skill-prototype-pollution-exploitation",
+      "skill-tool-assisted-exploitation",
       "skill-xss-polyglot",
       "skill-xss-waf-bypass"
     ],
@@ -6508,6 +6606,27 @@
         "skill-paths-dump",
         "skill-api-keys-dump",
         "skill-subdomain-takeover"
+      ]
+    },
+    "skill-tool-assisted-exploitation": {
+      "prerequisites": [
+        "skill-recon-attack-surface-mapping",
+        "skill-security-misconfigurations",
+        "skill-ffuf-web-fuzzing"
+      ],
+      "follow_ups": [
+        "skill-server-side-template-injection",
+        "skill-graphql-vulnerabilities",
+        "skill-wordpress-assessment",
+        "skill-exposed-source-code-recovery",
+        "skill-http-request-smuggling",
+        "skill-server-side-request-forgery",
+        "skill-cross-site-scripting",
+        "skill-403-bypass",
+        "skill-sql-injection",
+        "skill-command-injection",
+        "skill-iis-hacking",
+        "skill-cors-misconfiguration"
       ]
     },
     "skill-tools-reference": {
